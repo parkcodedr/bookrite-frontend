@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import './header.css'
-import { FaBed,FaCalendar,FaCalendarDay,FaCar,FaTaxi, FaUser} from 'react-icons/fa';
+import { FaBed,FaCalendarDay,FaCar,FaTaxi, FaUser} from 'react-icons/fa';
 import { IoIosAirplane} from 'react-icons/io';
 import { MdAttractions} from 'react-icons/md';
 import { DateRange } from 'react-date-range';
@@ -9,7 +9,7 @@ import 'react-date-range/dist/theme/default.css'; // theme css file
 import { format } from 'date-fns';
 
 
-function Header() {
+function Header({type}) {
     const [openOption, setOpenOption] = useState(false);
     const [dateOpen, setDateOpen] = useState(false)
     const [options, setOptions] = useState({
@@ -35,7 +35,7 @@ function Header() {
 
   return (
     <div className='header'>
-        <div className='header-container'>
+        <div className={type==="list"? 'header-container list-mode' : 'header-container'}>
         <div className='header-list'>
             <div className='header-item active'>
                 <FaBed /><span>Stays</span>
@@ -44,7 +44,7 @@ function Header() {
                 <IoIosAirplane /><span>Flight</span>
             </div>
             <div className='header-item'>
-                <FaCar /><span>Cars</span>
+                <FaCar /><span>Car rentals</span>
             </div>
             <div className='header-item'>
                 <MdAttractions /><span>Attractions</span>
@@ -55,11 +55,16 @@ function Header() {
             
         </div>
 
+        {
+            type!=="list" && (
+                <div className='header-title-container'>
         <h1 className="header-title">
         Find your next stay
         </h1>
         <p className='header-description'>Search deals on hotels, homes, and much more...</p>
         <button className='header-button'>Sign / Register</button>
+        
+
         <div className='header-search'>
             <div className='header-search-item'>
                 <FaBed className='header-icon' />
@@ -131,6 +136,12 @@ function Header() {
                <button className='header-button'>Search</button>
             </div>
         </div>
+        </div>
+        
+            )
+        }
+
+
         </div>
         
     </div>

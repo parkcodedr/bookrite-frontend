@@ -1,0 +1,29 @@
+
+.featured {
+    width: 100%;
+    max-width: 1101px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.featured-item{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 250px;
+}
+.featured-image{
+    width: 100%;
+    object-fit: cover;
+}
+.featured-title{
+    position: absolute;
+    bottom: 100px;
+    left: 20px;
+}
+.featured-title h1{
+font-weight: 800;
+font-size: 2.5rem;
+}
