@@ -1,0 +1,37 @@
+
+.mail-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+    background-color: rgb(2, 86, 2);
+    color: white;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1300px;
+}
+
+.mail-list-input-container{
+    margin-top: 10px;
+
+}
+.mail-list-input{
+    padding:12px 14px;
+    width: 300px;
+    border: none;
+    margin-right: 5px;
+    font-size: 16px;
+}
+.mail-list-button{
+    padding: 12px 18px;
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.mail-list-input:focus{
+    border: none;
+    outline: none;
+}
