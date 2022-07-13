@@ -10,6 +10,7 @@
 .top-property-item{
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 .top-property-image{
     width: 100%;
