@@ -1,10 +1,11 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom'
 import './topProperty.css'
 
 function TopProperty() {
   return (
     <div className='top-property'>
+        <Link to="hotels/9">
         <section className='top-property-item'>
             <img src='/images/property/villas4.jpg' className='top-property-image' alt='topproperty'/>
             <span className="top-property-name">Trascorp Hilton</span>
@@ -15,6 +16,8 @@ function TopProperty() {
                 <span>Excellent</span>
             </div>
         </section>
+        </Link>
+        <Link to="hotels/10">
         <section className='top-property-item'>
             <img src='/images/property/hotel6.jpg' className='top-property-image'  alt='topproperty'/>
             <span className="top-property-name">Banana Villa</span>
@@ -25,6 +28,8 @@ function TopProperty() {
                 <span>Wonderful</span>
             </div>
         </section>
+        </Link>
+        <Link to="hotels/11">
         <section className='top-property-item'>
             <img src='/images/property/apartment2.jpg' className='top-property-image'  alt='topproperty'/>
             <span className="top-property-name">Okwori Guest In</span>
@@ -35,6 +40,8 @@ function TopProperty() {
                 <span>Exceptional</span>
             </div>
         </section>
+        </Link>
+        <Link to="hotels/12">
         <section className='top-property-item'>
             <img src='/images/property/apartment1.jpg' className='top-property-image'  alt='topproperty'/>
             <span className="top-property-name">Brains & Hammers Estate</span>
@@ -45,6 +52,7 @@ function TopProperty() {
                 <span>Excellent</span>
             </div>
         </section>
+        </Link>
 
     </div>
   )

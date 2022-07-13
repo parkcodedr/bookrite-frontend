@@ -16,6 +16,12 @@
 .logo{
     font-weight: 500;
     font-size: 24px;
+    color: white;
+}
+.logo>a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
 }
 .navbar-button {
     margin-left: 20px;
