@@ -1,0 +1,86 @@
+.list-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.list-wrapper{
+    width: 100%;
+    max-width: 1101px;
+    display: flex;
+    gap:20px
+}
+.list-search{
+    flex: 1;
+    background-color: rgb(144, 213, 111);
+    padding: 10px;
+    position: sticky;
+    top: 10px;
+    border-radius: 10px;
+    height: max-content;
+}
+.list-search-title{
+    font-size: 20px;
+    color: black;
+}
+.list-item .options-label{
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+
+.list-result{
+    flex: 3;
+}
+.list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.list-item>input{
+    height: 30px;
+    border: none;
+    padding: 5px;
+}
+.list-item>input:focus{
+    outline: none;
+}
+.list-item label{
+    font-size: 14px;
+}
+.list-item>span{
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.list-option-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: black;
+}
+.list-option-item>input{
+width: 50px;
+padding: 5px 8px;
+border: none;
+}
+.list-option-item>input:focus{
+    border: none;
+    outline: none;
+}
+.list-option-container{
+    padding: 10px;
+}
+.list-search .search-button{
+    width: 100%;
+    background-color: green;
+    color:white;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
